@@ -15,6 +15,7 @@ class LPC : public QDialog
 public:
     explicit LPC(QWidget *parent = nullptr);
     ~LPC();
+    QString wav_name;
 
 private slots:
     void on_lpc_exit_clicked();
@@ -25,10 +26,7 @@ private slots:
 
 private:
     Ui::LPC *ui;
-    QString wav_name;
     QString wave_path_dir="F:/python/myproject/synthesised wav";
-    QSound *sound_lpc_EGG=new QSound("F:/python/myproject/synthesised wav/bF0C11011/LPC/bF0C11011-LPC_EGG.wav");
-    QSound *sound_lpc_speech=new QSound("F:/python/myproject/synthesised wav/bF0C11011/LPC/bF0C11011-LPC_speech.wav");
 };
 
 #endif // LPC_H

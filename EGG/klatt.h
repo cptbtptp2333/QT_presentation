@@ -15,6 +15,7 @@ class Klatt : public QDialog
 public:
     explicit Klatt(QWidget *parent = nullptr);
     ~Klatt();
+    QString wav_name;
 
 private slots:
 
@@ -26,10 +27,7 @@ private slots:
 
 private:
     Ui::Klatt *ui;
-    QString wav_name;
     QString wave_path_dir="F:/python/myproject/synthesised wav";
-    QSound *sound_klatt_EGG=new QSound("F:/python/myproject/synthesised wav/bF0C11011/klatt/bF0C11011-klatt_EGG.wav");
-    QSound *sound_klatt_pulse=new QSound("F:/python/myproject/synthesised wav/bF0C11011/klatt/bF0C11011-klatt_pulse.wav");
 };
 
 #endif // KLATT_H

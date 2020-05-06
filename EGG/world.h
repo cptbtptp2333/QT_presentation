@@ -17,10 +17,6 @@ public:
     ~WORLD();
     QString wav_name;
 
-
-public slots:
-    //void world_clicked();
-
 private slots:
     void on_world_exit_clicked();
 
@@ -31,7 +27,6 @@ private slots:
 
 private:
     Ui::WORLD *ui;
-    //QString wav_name;
     QString wave_path_dir="F:/python/myproject/synthesised wav";
 };
 

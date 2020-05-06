@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.2, 2020-05-06T10:20:30. -->
+<!-- Written by QtCreator 4.11.2, 2020-05-06T14:54:13. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -287,8 +287,9 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:F:/QT/projects/EGG/EGG.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">F:/QT/projects/EGG/EGG.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">EGG2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:F:/OneDrive - buaa.edu.cn/Documents/GitHub/QT_presentation/EGG/EGG.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">F:/OneDrive - buaa.edu.cn/Documents/GitHub/QT_presentation/EGG/EGG.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>

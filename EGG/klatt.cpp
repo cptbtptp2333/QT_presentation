@@ -7,8 +7,6 @@ Klatt::Klatt(QWidget *parent) :
     ui(new Ui::Klatt)
 {
     ui->setupUi(this);
-    QComboBox klatt_comboBox;
-    wav_name=klatt_comboBox.currentText();
 }
 
 Klatt::~Klatt()
@@ -23,6 +21,7 @@ void Klatt::on_klatt_exit_clicked()
 
 void Klatt::on_klatt_EGG_clicked()
 {
+    wav_name=ui->klatt_comboBox->currentText();
     QString klatt_EGG_path=QString("%1/%2/klatt/%2-klatt_EGG.jpg").arg(wave_path_dir).arg(wav_name);
     QSound *sound_klatt_EGG=new QSound(QString("%1/%2/klatt/%2-klatt_EGG.wav").arg(wave_path_dir).arg(wav_name));
     QPixmap pixmap_klatt_EGG;
@@ -36,6 +35,7 @@ void Klatt::on_klatt_EGG_clicked()
 
 void Klatt::on_klatt_pulse_clicked()
 {
+    wav_name=ui->klatt_comboBox->currentText();
     QString klatt_pulse_path=QString("%1/%2/klatt/%2-klatt_pulse.jpg").arg(wave_path_dir).arg(wav_name);
     QSound *sound_klatt_pulse=new QSound(QString("%1/%2/klatt/%2-klatt_pulse.wav").arg(wave_path_dir).arg(wav_name));
     QPixmap pixmap_klatt_pulse;

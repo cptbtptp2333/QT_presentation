@@ -6,8 +6,6 @@ LPC::LPC(QWidget *parent) :
     ui(new Ui::LPC)
 {
     ui->setupUi(this);
-    QComboBox lpc_comboBox;
-    wav_name=lpc_comboBox.currentText();
 }
 
 LPC::~LPC()
@@ -22,6 +20,7 @@ void LPC::on_lpc_exit_clicked()
 
 void LPC::on_lpc_EGG_clicked()
 {
+    wav_name=ui->lpc_comboBox->currentText();
     QString lpc_EGG_path=QString("%1/%2/LPC/%2-lpc_EGG.jpg").arg(wave_path_dir).arg(wav_name);
     QSound *sound_lpc_EGG=new QSound(QString("%1/%2/LPC/%2-lpc_EGG.wav").arg(wave_path_dir).arg(wav_name));
     QPixmap pixmap_lpc_EGG;
@@ -35,6 +34,7 @@ void LPC::on_lpc_EGG_clicked()
 
 void LPC::on_lpc_speech_clicked()
 {
+    wav_name=ui->lpc_comboBox->currentText();
     QString lpc_speech_path=QString("%1/%2/LPC/%2-lpc_speech.jpg").arg(wave_path_dir).arg(wav_name);
     QSound *sound_lpc_speech=new QSound(QString("%1/%2/LPC/%2-lpc_speech.wav").arg(wave_path_dir).arg(wav_name));
     QPixmap pixmap_lpc_speech;

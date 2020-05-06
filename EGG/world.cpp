@@ -6,10 +6,6 @@ WORLD::WORLD(QWidget *parent) :
     ui(new Ui::WORLD)
 {
     ui->setupUi(this);
-    QComboBox world_comboBox;
-    wav_name=world_comboBox.currentText();
-    //wav_name="bF0C11011";
-    //QObject::connect(ui->world_comboBox,SIGNAL(currentTextChanged(QString)),this,SLOT(world_clicked));
 }
 
 WORLD::~WORLD()
@@ -24,6 +20,7 @@ void WORLD::on_world_exit_clicked()
 
 void WORLD::on_world_EGG_clicked()
 {
+    wav_name=ui->world_comboBox->currentText();
     QString world_EGG_path=QString("%1/%2/WORLD/%2-world_EGG.jpg").arg(wave_path_dir).arg(wav_name);
     QSound *sound_world_EGG=new QSound(QString("%1/%2/WORLD/%2-world_EGG~1.wav").arg(wave_path_dir).arg(wav_name));
     QPixmap pixmap_world_EGG;
@@ -36,6 +33,7 @@ void WORLD::on_world_EGG_clicked()
 
 void WORLD::on_world_wav_clicked()
 {
+    wav_name=ui->world_comboBox->currentText();
     QString world_wav_path=QString("%1/%2/WORLD/%2-world_speech.jpg").arg(wave_path_dir).arg(wav_name);
     QSound *sound_world_wav=new QSound(QString("%1/%2/WORLD/%2-world_speech~1.wav").arg(wave_path_dir).arg(wav_name));
     QPixmap pixmap_world_wav;
@@ -45,9 +43,3 @@ void WORLD::on_world_wav_clicked()
     sound_world_wav->play();
 }
 
-/*
-void WORLD::world_clicked()
-{
-    wav_name=ui->world_comboBox->currentText();
-}
-*/
