@@ -69,10 +69,26 @@ border-image:url();
      <x>470</x>
      <y>122</y>
      <width>101</width>
-     <height>111</height>
+     <height>121</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QRadioButton" name="klatt_origin">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>原语音</string>
+      </property>
+     </widget>
+    </item>
     <item>
      <widget class="QRadioButton" name="klatt_pulse">
       <property name="font">
@@ -122,7 +138,32 @@ border-image:url();
    </item>
    <item>
     <property name="text">
+     <string>bF0C11031</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>bF0C11041</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
      <string>bM0C01013</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>bM0C01021</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>bM0C01051</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>bM0C01091</string>
     </property>
    </item>
   </widget>
@@ -140,6 +181,9 @@ border-image:url();
      <family>微软雅黑</family>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">QLineEdit{background-color:rgba(255,0,0,0);border-radius:0px;}</string>

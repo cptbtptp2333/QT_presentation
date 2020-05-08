@@ -24,9 +24,13 @@ private slots:
 
     void on_lpc_speech_clicked();
 
+    void on_lpc_origin_clicked();
+
 private:
     Ui::LPC *ui;
     QString wave_path_dir="F:/python/myproject/synthesised wav";
+    QString origin_wave_dir="F:/EGG/test";
+    QString origin_wave_pic_dir="F:/python/myproject/f0_EGG/test";
 };
 
 #endif // LPC_H

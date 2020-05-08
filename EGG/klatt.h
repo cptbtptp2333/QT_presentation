@@ -25,9 +25,13 @@ private slots:
 
     void on_klatt_pulse_clicked();
 
+    void on_klatt_origin_clicked();
+
 private:
     Ui::Klatt *ui;
     QString wave_path_dir="F:/python/myproject/synthesised wav";
+    QString origin_wave_dir="F:/EGG/test";
+    QString origin_wave_pic_dir="F:/python/myproject/f0_EGG/test";
 };
 
 #endif // KLATT_H

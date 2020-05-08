@@ -56,44 +56,6 @@ border-image:url();
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QRadioButton" name="lpc_EGG">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>130</y>
-     <width>151</width>
-     <height>19</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>黑体</family>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>EGG 语音合成</string>
-   </property>
-  </widget>
-  <widget class="QRadioButton" name="lpc_speech">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>180</y>
-     <width>181</width>
-     <height>19</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>黑体</family>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>语音基频 语音合成</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="lpc_lineEdit">
    <property name="geometry">
     <rect>
@@ -108,6 +70,9 @@ border-image:url();
      <family>微软雅黑</family>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">QLineEdit{background-color:rgba(255,0,0,0);border-radius:0px;}</string>
@@ -137,9 +102,88 @@ border-image:url();
    </item>
    <item>
     <property name="text">
+     <string>bF0C11031</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>bF0C11041</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
      <string>bM0C01013</string>
     </property>
    </item>
+   <item>
+    <property name="text">
+     <string>bM0C01021</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>bM0C01051</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>bM0C01091</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>130</y>
+     <width>182</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QRadioButton" name="lpc_origin">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>原语音</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="lpc_EGG">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>EGG 语音合成</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="lpc_speech">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>语音基频 语音合成</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
