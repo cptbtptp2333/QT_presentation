@@ -117,7 +117,7 @@ border-image:url();
    </item>
    <item>
     <property name="text">
-     <string>bM0C01021</string>
+     <string>bM0C01023</string>
     </property>
    </item>
    <item>
@@ -131,7 +131,7 @@ border-image:url();
     </property>
    </item>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>440</x>
