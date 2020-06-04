@@ -161,11 +161,6 @@ border-image:url();
      <string>bM0C01051</string>
     </property>
    </item>
-   <item>
-    <property name="text">
-     <string>bM0C01091</string>
-    </property>
-   </item>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
